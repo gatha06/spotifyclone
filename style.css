@@ -1,0 +1,110 @@
+
+
+/* GENERAL */
+body {
+  margin: 0;
+  background: #121212;
+  font-family: 'Circular Std', sans-serif;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: black;
+}
+
+.logo {
+  height: 35px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 15px;
+}
+
+.nav-links .line {
+  width: 1px;
+  height: 20px;
+  background: white;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(135deg, #1db954 0%, #121212 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 72px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cta {
+  background: white;
+  color: black;
+  border: none;
+  padding: 15px 35px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+  padding: 60px;
+  background: black;
+}
+
+.footer-cols {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+
+.copy {
+  color: #666;
+  font-size: 13px;
+  text-align: center;
+}
+.logo {
+    width: 150px; /* adjust size as needed */
+    display: block;
+    margin: 20px auto; /* centers it horizontally */
+}
+
+header {
+    text-align: center; /* optional: center everything in header */
+}
