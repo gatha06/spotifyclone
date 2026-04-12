@@ -5,67 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spotify Clone</title>
 
-  <!-- Spotify Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Circular+Std:wght@300;400;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Circular+Std:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- NAVBAR -->
   <nav class="navbar">
-    <img src="assets/logo.svg" class="logo" alt="Spotify Logo" />
+    <div class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="50" cy="50" r="50" fill="#1ed760" />
+          <path d="M29.2 60.9c10.6 6 25.8 4.1 34.6-1.3 1.6-1 2-3.1 1-4.7-1-1.6-3.1-2-4.7-1-6.5 4-18.8 5.5-28.6 1.8-1.8-.7-3.7.1-4.4 1.9-.7 1.8.1 3.7 1.9 4.3zm3.8-15.3c12.3 7 32.8 7 42.8 1.7 2-1.1 2.6-3.7 1.4-5.7-1.1-2-3.7-2.6-5.7-1.4-7.8 4.4-24.8 4.4-36.1 1.1-2.2-1.2-4.8-.3-6 1.8-1.2 2.2-.3 4.8 1.8 6zm0-15.2c9 5.2 23.5 6 32.7 2.1 2.4-1.1 3.4-4.1 2.3-6.5-1.1-2.4-4.1-3.4-6.5-2.3-7.1 3.2-18.7 2.8-25.9-.8-2.8-1.6-6.4-.8-8 2-.8 1.5-.4 3.4 1.5 4.6z" fill="#000"/>
+        </svg>
+      </span>
+      <span class="brand-name">Spotify</span>
+    </div>
 
-    <ul class="nav-links">
-      <li>Premium</li>
-      <li>Support</li>
-      <li>Download</li>
-      <li class="line"></li>
-      <li>Sign up</li>
-      <li>Log in</li>
-    </ul>
+    <div class="nav-links">
+      <a href="#">Premium</a>
+      <a href="#">Support</a>
+      <a href="#">Download</a>
+      <span class="divider"></span>
+      <a href="#" class="nav-button outline">Sign up</a>
+      <a href="#" class="nav-button filled">Log in</a>
+    </div>
   </nav>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Listening is everything</h1>
-      <p>Millions of songs. No credit card needed.</p>
-      <button class="cta">Get Spotify Free</button>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Millions of songs. Free on Spotify.</span>
+        <h1>Music for everyone.</h1>
+        <p>Millions of songs, podcasts, and videos from artists all over the world. Start listening now with Spotify Free.</p>
 
-  <!-- FOOTER -->
+        <div class="hero-actions">
+          <a href="#" class="button filled">Get Spotify Free</a>
+          <a href="#" class="button outline">Get Premium</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="device-screen">
+          <div class="screen-top">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="screen-content">
+            <div class="album-card">
+              <div class="album-art"></div>
+              <div>
+                <p class="album-label">Recently played</p>
+                <h2>Discover Weekly</h2>
+              </div>
+            </div>
+            <div class="music-list">
+              <div class="track"><span>1</span><p>Blinding Lights</p></div>
+              <div class="track"><span>2</span><p>As It Was</p></div>
+              <div class="track"><span>3</span><p>Levitating</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-accent"></div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3>Play your favorites.</h3>
+        <p>Enjoy millions of tracks and podcasts with no ads. Start your free account and listen anywhere.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Always with you.</h3>
+        <p>Switch between devices seamlessly and keep your music moving with you everywhere.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Personalized for you.</h3>
+        <p>Discover new music made just for you with playlists built around your listening habits.</p>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
-    <div class="footer-cols">
+    <div class="footer-grid">
       <div>
         <h4>Company</h4>
-        <p>About</p>
-        <p>Jobs</p>
-        <p>For the Record</p>
+        <a href="#">About</a>
+        <a href="#">Jobs</a>
+        <a href="#">For the Record</a>
       </div>
-
       <div>
         <h4>Communities</h4>
-        <p>For Artists</p>
-        <p>Developers</p>
-        <p>Advertising</p>
-        <p>Investors</p>
+        <a href="#">For Artists</a>
+        <a href="#">Developers</a>
+        <a href="#">Advertising</a>
+        <a href="#">Investors</a>
       </div>
-
       <div>
-        <h4>Links</h4>
-        <p>Support</p>
-        <p>Web Player</p>
-        <p>Free Mobile App</p>
+        <h4>Useful links</h4>
+        <a href="#">Support</a>
+        <a href="#">Web Player</a>
+        <a href="#">Free Mobile App</a>
       </div>
     </div>
-
-    <p class="copy">© 2025 Spotify Clone by Gigi</p>
+    <p class="copy">© 2026 Spotify Clone</p>
   </footer>
-  <header>
-    <img src="logo.png" alt="My Logo" class="logo">
-</header>
-
+  <script src="script.js"></script>
 </body>
 </html>
