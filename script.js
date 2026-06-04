@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const toast = document.createElement('div');
   toast.className = 'toast';
+  toast.setAttribute('role', 'status');
+  toast.setAttribute('aria-live', 'polite');
+  toast.setAttribute('aria-atomic', 'true');
   document.body.appendChild(toast);
 
   const buttons = document.querySelectorAll('.button, .nav-button');
